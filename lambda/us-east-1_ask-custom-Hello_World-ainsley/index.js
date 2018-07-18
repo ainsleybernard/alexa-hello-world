@@ -38,7 +38,7 @@ const HelloWorldIntentHandler = {
       speechText += '<amazon:effect name="whispered">' + nameOfPerson + '</amazon:effect>';
     }
     else {
-      speechText += "test";
+      speechText += "testssss";
     }
 
     console.log(speechText);
