@@ -33,12 +33,12 @@ const HelloWorldIntentHandler = {
 
     var speechText = 'Hello ';
     var nameOfPerson = handlerInput.requestEnvelope.request.intent.slots.nameOfPerson.value;
-
-    if (nameOfPerson) {
-      speechText += '<amazon:effect name="whispered">' + nameOfPerson + '</amazon:effect>';
+    
+    if(nameOfPerson){
+      speechText+= '<amazon:effect name="whispered">' + nameOfPerson +'</amazon:effect>';
     }
-    else {
-      speechText += "testssss";
+    else{
+      speechText+= "test";
     }
 
     console.log(speechText);
